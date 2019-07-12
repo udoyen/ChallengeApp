@@ -23,7 +23,8 @@ class AboutAndelaActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             andelaWebView.webViewClient = WebViewClient()
         }
-        webviewtxt.setText(urlString)
+        // Property access syntax
+        webviewtxt.text = urlString
         // Load the URL
         andelaWebView.loadUrl(urlString)
     }
