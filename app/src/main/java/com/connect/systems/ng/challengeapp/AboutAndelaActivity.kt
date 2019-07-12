@@ -15,7 +15,7 @@ class AboutAndelaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about_andela)
-
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         val andelaWebView = findViewById<WebView>(R.id.andelaWebView)
 
         // Get the url

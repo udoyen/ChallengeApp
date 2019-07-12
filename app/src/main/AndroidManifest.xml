@@ -11,7 +11,9 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AboutAndelaActivity">
+        <activity
+                android:name=".AboutAndelaActivity"
+                android:label="@string/AlcAbout">
 
         </activity>
         <activity
