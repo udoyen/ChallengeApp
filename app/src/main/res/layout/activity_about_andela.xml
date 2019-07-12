@@ -8,14 +8,6 @@
         android:layout_height="match_parent"
         tools:context=".AboutAndelaActivity">
 
-    <TextView
-            android:text="Web View Example"
-            android:id="@+id/webViewTxt"
-            android:gravity="center"
-            android:padding="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
     <WebView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         //set the onclick event listener
         andelaBtn.setOnClickListener {
             val andelaIntent = Intent(this, AboutAndelaActivity::class.java)
-            andelaIntent.putExtra("andelaURL", "https://google.com/")
+            andelaIntent.putExtra("andelaURL", "https://andela.com/alc/")
             startActivity(andelaIntent)
         }
 
