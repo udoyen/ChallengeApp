@@ -16,7 +16,8 @@
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.494"
             android:id="@+id/textView" android:textSize="36sp"
             android:layout_marginTop="128dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:textColor="@android:color/background_dark" android:fontFamily="serif"/>
     <Button
             android:text="About ALC"
             android:layout_width="wrap_content"
@@ -26,7 +27,7 @@
             android:textSize="24sp" android:layout_marginTop="108dp"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
-            android:padding="10"/>
+            android:padding="10dp" android:background="@color/colorAccent"/>
     <Button
             android:text="My Profile"
             android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
             app:layout_constraintEnd_toEndOf="@+id/activityABtn"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
             android:textSize="24sp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/activityABtn" app:layout_constraintVertical_bias="0.401"
-            android:padding="10"/>
+            app:layout_constraintTop_toBottomOf="@+id/activityABtn" app:layout_constraintVertical_bias="0.146"
+            android:padding="10dp" android:background="@color/colorAccent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
