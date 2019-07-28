@@ -4,11 +4,13 @@ import android.net.http.SslError
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.webkit.SslErrorHandler
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_about_andela.*
 import kotlinx.android.synthetic.main.activity_profile.*
 
 class AboutAndelaActivity : AppCompatActivity() {
@@ -17,7 +19,6 @@ class AboutAndelaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about_andela)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        val andelaWebView = findViewById<WebView>(R.id.andelaWebView)
         val settings = andelaWebView.settings
 
         // Enable java script in web view
@@ -75,5 +76,12 @@ class AboutAndelaActivity : AppCompatActivity() {
 
         // Load the URL
         andelaWebView.loadUrl(urlString)
+    }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home)
+            finish()
+        return true
     }
 }
